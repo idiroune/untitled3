@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven 'MavenJenkins2'
+    }
     stages {
         stage('Clone Git repository'){
             steps{
